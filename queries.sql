@@ -46,3 +46,8 @@ SELECT employees.last_name, COUNT(employees.last_name) AS "last name freq"
 FROM employees
 GROUP BY employees.last_name
 ORDER BY "last name freq" DESC;
+
+--Epilogue
+SELECT employees.emp_no, employees.last_name, employees.first_name
+FROM employees
+WHERE emp_no = '499942'
